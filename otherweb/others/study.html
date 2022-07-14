@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="UTF-8"/>
+		<title>FZY offical website</title>
+		<style>
+            *{
+                cursor: none;
+            }
+			h1 {
+				text-align:center;
+                color: rgb(240,248,255);
+			}
+			h2{
+				text-align:center;
+			}
+			/* img {
+				text-align:center;
+				margin:auto;
+				margin-left:10%;
+			}  */
+			a{
+				text-align:center;
+				margin:auto;
+			}
+			ul{
+				margin:auto;
+				width:300px;
+			}
+			li{
+				height:35px;
+			}
+			span{
+				font-family: "微软雅黑";
+				font-size: 17px;
+			}
+			body{
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:100% 100%;
+			}
+            .glass{
+                background-color: rgb(240,248,255,0.7);
+				border-radius: 10px;
+				margin:20px;
+				padding:10px 20px 20px 20px;
+            }
+            button{
+                width:85px;
+                height: 30px;
+                border-radius: 5px 0px;
+            } 
+            #mouse{
+                width: 30px;
+                position: absolute;
+            }
+            .space{
+                height: 50px;
+            }
+		</style>
+	</head>
+	<body background="../imgs/bg.jpg">
+        <div class="space">
+
+        </div>
+        <img id ="mouse" src="../imgs/mouse.png" alt="">
+        <script>
+            document.addEventListener('mousemove', function (e) {
+                //鼠标只要移动,就会触发事件
+                
+                var x = e.pageX;
+                var y = e.pageY;
+                var pic = document.querySelector('img');
+                pic.style.left = x+1+'px';
+                pic.style.top = y+3+'px';
+                if(x<=5||y<=5){
+                    pic.style.display="none";
+                }else{
+                    pic.style.display="block";
+                }
+            })
+        </script>
+		<h1><b>FZY</b> 学习网站</h1>
+		<h1><b>FZY</b> study website</h1>
+		<hr/>
+        <div class="glass">
+            <h2>跳转 / jump to ...</h2>
+            <ul>
+                <li>
+                    <a href="study.html"><button >学习版首页</button></a><b><span> —— 前往学习版首页</span></b>
+                </li>
+                <li>
+                    <a href="otherweb/vedio.html"><button > 录课视频 </button></a><b><span> —— 前往学习版首页</span></b>
+                </li>
+                <li>
+                    <a href="otherweb/ppt.html"><button > PPT </button></a><b><span> —— 前往学习版首页</span></b>
+                </li>
+            </table>
+        </div>
+	</body>
+</html>
