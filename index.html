@@ -18,11 +18,20 @@
 				text-align:center;
 				margin:auto;
 			}
-			ul{
-				margin:auto;
-				width:300px;
+			button{
+                width:85px;
+                height: 30px;
+                border-radius: 5px 0px;
+            } 
+			span{
+				font-family: "微软雅黑";
+				font-size: 17px;
 			}
-			li{
+			p{
+				margin:33%;
+				width:500px;
+				margin-top: 15px;
+				margin-bottom: 15px;
 				height:35px;
 			}
 			span{
@@ -30,25 +39,43 @@
 				font-size: 20px;
 			}
 			body{
-				background-color: lightblue;
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:100% 100%;
 			}
+            .glass{
+				margin: auto;
+                background-color: rgb(240,248,255,0.7);
+				border-radius: 10px;
+				margin-top:20px;
+				padding:10px 20px 20px 20px;
+            }
 		</style>
 	</head>
-	<body>
-		<h1><b>FZY</b> 官方网站</h1>
-		<h1><b>FZY</b> official website</h1>
+	<body background="include\others\study\imgs\bgma.webp.jpg">
+		<h1 style="color: rgb(135, 166, 192);"><b>FZY</b> 官方网站</h1>
+		<h1 style="color: rgb(135, 166, 192);"><b>FZY</b> official website</h1>
 		<hr/>
-		<h2>主页跳转 / jump to ...</h2>
-		<ul>
-			<li>
-				<a href="index.html"><button >首页</button></a><span> —— 前往首页</span>
-			</li>
-			<li>
-				<a href="otherweb/FAQ.html"><button >FAQ</button></a><span> —— 常见问题解答</span>
-			</li>
-			<li>
-				<a href="otherweb/news.html"><button >新闻</button></a><span> —— 实时更新有趣的新闻</span>
-			</li>
-		</table>
+		<h2 style="color: rgb(223, 240, 253);">版面重定向 / jump to ...</h2>
+		<div class="glass">
+			<p>
+				<a href="include/others/study/study.html"><button >学习版首页</button></a><span> —— 那么卷干啥? 看看我们的精品课</span>
+			</p>
+			<p>
+				<a href="include/others/water/main.html"><button >划水区</button></a><span> —— 想偷懒了? </span>
+			</p>
+			<p>
+				<a href="include/others/news/news.html"><button >新闻</button></a><span> —— 真的是新闻? 看来是真的</span>
+			</p>
+		</div>
+		<h2 style="color: rgb(223, 240, 253);">主页跳转 / jump to ...</h2>
+		<div class="glass">
+			<p>
+				<a href="index.html"><button >首页</button></a><span> —— 不要乱玩左边的按钮</span>
+			</p>
+			<p>
+				<a href="include/FAQ.html"><button >FAQ</button></a><span> —— 一个不正经的解答(我真的没在骂人)</span>
+			</p>
+		</div>
 	</body>
 </html>
