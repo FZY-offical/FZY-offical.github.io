@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta content="UTF-8"/>
-		<title>FZY offical website</title>
+		<title>FZY STUDYING</title>
 		<style>
             *{
                 cursor: none;
@@ -16,6 +16,13 @@
                 -ms-user-select:none;
                 user-select:none;
             }
+			p{
+				margin:33%;
+				width:500px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+				height:35px;
+			}
 			h1 {
 				text-align:center;
                 color: rgb(240,248,255);
@@ -72,34 +79,38 @@
 			    .search-box {
 			        font-family: FontAwesome;
 			        position: absolute;
-			        top: 70px;
-			        left: 90%;
-			        transform: translate(-50%, -50%);
+					font-size: 14px;
+			        top: 60px;
+			        left: 97%;
+			        transform: translate(-100%, -0%);
 			        background: #ffffff;
 			        height: 40px;
 			        border: 50px;
 			        border-radius: 40px;
 			        padding: 10px;
+					padding-bottom: 15px;
+					padding-left: 20px;
 			        opacity: 0;
 			        transition-delay: 99999999s;
 			        transition-duration: 1s;
 			    }
 			
 			    .search-box:hover>.search-txt {
-			        width: 300px;
+			        width: 500px;
 			        padding: 0 6px;
+					/* right:5%; */
 			    }
 			
 			    .search-box:hover>.search-btn {
 			        /*color: white;*/
 			        /*background: black;*/
-                    display: none;
+                    display: none; 
 			    }
 			
 			    .search-btn {
 			        transition: 0.5s;
 			        font-family: "微软雅黑";
-			        font-size: 10px;
+			        font-size: 13px;
 			        color: black;
 			        float: right;
 			        width: 60px;
@@ -107,7 +118,7 @@
 			        border: 10px;
 			        border-radius: 50%;
 			        background: #ffffff;
-			        display: flex;
+			        display: none;
 			        justify-content: center;
 			        align-items: center;
 			        text-decoration: none;
@@ -126,23 +137,27 @@
 			        width: 0px;
 			    }
 			   
-			    @keyframes flash {
+			    /* @keyframes flash {
 			        50% {
 			            transform: scale(1.5);
+						transform: translateX(-40px);
 			        }
 			
 			        80% {
 			            transform: rotate(-60deg);
+						transform: translateX(-70px);
 			        }
 			
 			        100% {
 			            transform: rotate(30deg);
+						transform: translateX(-80px);
 			        }
-			        
+			         
 			        
 			    }
+			    */
 			    html:hover .search-box {
-			        opacity: 1;
+			    	opacity: 1;
 			        transition-delay: 0s;
 			        transition-duration: 0s;
 			    }
@@ -157,6 +172,18 @@
 		<h1><b>FZY</b> 学习网站</h1>
 		<h1><b>FZY</b> study website</h1>
 		<hr/>
+		<div class="glass">
+			<h2 style="color: rgb(223, 240, 253);">版面重定向 / jump to ...</h2>
+			<p>
+				<a href="../../../index.html"><button>综合版首页</button></a><span> —— 快乐老家</span>
+			</p>
+			<p>
+				<a href="../water/main.html"><button>划水区</button></a><span> —— 想偷懒了? </span>
+			</p>
+			<p>
+				<a href="../news/news.html"><button>新闻</button></a><span> —— 真的是新闻? 看来是真的</span>
+			</p>
+		</div>
         <div class="glass">
             <h2>跳转 / jump to ...</h2>
             <ul>
@@ -173,8 +200,8 @@
         </div>
         <center>
             <div class="search-box">
-                <input class="search-txt" type='text' id='inp' placeholder="What are you looking for?"/>
-                <input class="search-btn" type='button' id='btn' value='research' />
+                <input class="search-txt" type='text' id='inp' placeholder="Type here and press RETURN/ENTER to search you problem"/>
+                <input class="search-btn" type='button' id='btn' value='search' />
             </div>
             <div>			
             </div>
@@ -184,17 +211,16 @@
 <script>
     document.addEventListener('mousemove', function (e) {
         //鼠标只要移动,就会触发事件
-        
-        var x = e.pageX;
-        var y = e.pageY;
-        var pic = document.querySelector('img');
-        pic.style.left = x+1+'px';
-        pic.style.top = y+3+'px';
-        if(x<=5||y<=5){
-            pic.style.display="none";
-        }else{
-            pic.style.display="block";
-        }
+			var x = e.pageX;
+			var y = e.pageY;
+			var pic = document.querySelector('img');
+			pic.style.left = x+3+'px';
+			pic.style.top = y+3+'px';
+			if(x<=5||y<=5){
+				pic.style.display="none";
+			}else{
+				pic.style.display="block";
+			}
     })
     var oInp = document.getElementById('inp');
     var oBtn = document.getElementById('btn');
