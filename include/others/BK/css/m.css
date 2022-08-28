@@ -1,0 +1,151 @@
+/* *{
+            
+                moz-user-select: -moz-none;
+                -moz-user-select: none;
+                -o-user-select:none;
+                -khtml-user-select:none;
+                -webkit-user-select:none;
+                -ms-user-select:none;
+                user-select:none;
+        } */
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#menu {
+    background-color: rgb(80, 78, 82);
+}
+
+#meti {
+    color: white;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 0px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 5px;
+    /* 不可选中样式 
+                moz-user-select: -moz-none;
+                -moz-user-select: none;
+                -o-user-select:none;
+                -khtml-user-select:none;
+                -webkit-user-select:none;
+                -ms-user-select:none;
+                user-select:none;*/
+}
+
+#border {
+    /* 不可选中样式 
+                moz-user-select: -moz-none;
+                -moz-user-select: none;
+                -o-user-select:none;
+                -khtml-user-select:none;
+                -webkit-user-select:none;
+                -ms-user-select:none;
+                user-select:none;*/
+}
+
+.menu {
+    vertical-align: middle;
+    color: white;
+    font-family: '微软雅黑';
+    font-size: 32px;
+    margin: 15px  15px 15px 0px;
+}
+
+.eng {
+    color: lightgray;
+    vertical-align: text-bottom;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.H{
+    width: 1000px;
+    background-color: rgba(27, 31, 35, 0.799);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 4px 4px #8986a52d;
+}
+
+.Q{
+    color: white;
+    text-align: center;
+}
+
+.intro{
+    vertical-align: middle;
+    color: white;
+    font-family: '微软雅黑';
+    font-size: 32px;
+    letter-spacing: 1.5px;
+}
+
+.ineng{
+    color: lightgray;
+    vertical-align: bottom;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.introduction{
+    font-family: "楷体";
+    font-size: 20px;
+    color:wheat;
+    /* text-align: center; */
+    line-height: 35px;
+    margin-left: 15%;
+    letter-spacing: 0.5px;
+}
+
+.jump{
+    color: white;
+}
+
+#special{
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu:hover{
+    background-color: rgb(49, 46, 46);
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+}
+
+.smenu{
+    vertical-align: middle;
+    color: white;
+    font-family: '微软雅黑';
+    font-size: 32px;
+    margin: 15px 0px 15px 15px ;
+}
+
+#price{
+    width:1000px;
+    margin-left: 15%;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.fuck {
+    padding-left: 20px;
+    font-family: "楷体";
+    font-size: 20px;
+    color: wheat;
+    /* text-align: center; */
+    line-height: 20px;
+    margin-left: 15%;
+    letter-spacing: 0.5px;
+}
